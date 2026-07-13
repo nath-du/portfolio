@@ -586,6 +586,43 @@
             .griglia-progetti {
                 grid-template-columns: repeat(2, 1fr);
             }
+
+            .container {
+                padding: 0px 0px;
+            }
+
+            .hero-info p {
+                font-size: 1.2em;
+                margin-top: 0px;
+                max-width: auto;
+            }
+
+            .hero-info h1 {
+                font-size: 5rem;
+                letter-spacing: -0.03em;
+                line-height: 0.85;
+
+            }
+
+            .hero-info h3 {
+                font-size: 1.40rem;
+            }
+
+            .hero {
+                padding: 2rem;
+            }
+        }
+        
+        @media (max-width: 400px) {
+            .azioni {
+                gap: 6px;
+            }
+
+            .azioni .btn {
+                padding: clamp(8px, 2vw, 10px) clamp(10px, 3vw, 14px);
+                font-size: 0.85rem;
+                white-space: nowrap;
+            }
         }
 
         @media (max-width: 1024px) {
@@ -593,9 +630,6 @@
                 grid-template-columns: 1fr;
                 gap: 3rem;
                 text-align: center;
-            }
-            .hero-info p {
-                margin: 1.5rem auto 0;
             }
             .hero .gruppo-pulsanti {
                 justify-content: center;
@@ -622,9 +656,7 @@
         @media (max-width: 768px) {
             .nav-links { display: none; }
             .hamburger { display: block; }
-            .hero-info h1 { font-size: 2.75rem; }
             .sezione { padding: 4rem 1rem; }
-            .hero { padding: 6rem 1rem 4rem; }
             .intestazione-sezione { text-align: center; justify-content: center; }
             .intestazione-sezione .btn { width: 100%; }
             .griglia-progetti { grid-template-columns: 1fr; }
@@ -632,7 +664,6 @@
 
         @media (max-width: 480px) {
             .griglia-footer { grid-template-columns: 1fr; gap: 2rem; }
-            .hero-info h1 { font-size: 2.25rem; }
             .about-metriche { grid-template-columns: 1fr; }
             .box-badge.studio { flex-direction: column; gap: 0.5rem; text-align: center; }
         }
