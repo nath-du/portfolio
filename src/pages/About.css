@@ -1,0 +1,134 @@
+.testo-completo {
+    font-size: 1.125rem;
+    color: #4B5563;
+    line-height: 1.85;
+    background: var(--muted);
+    border-radius: var(--radius);
+    padding: 2.5rem 3rem;
+}
+
+.testo-completo p {
+    margin-bottom: 1.5rem;
+}
+
+.testo-completo p:last-child {
+    margin-bottom: 0;
+}
+
+.testo-completo p:first-child {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+@media (max-width: 768px) {
+    .testo-completo {
+        padding: 1.75rem;
+    }
+}
+
+/* SKIlls */
+.griglia-statistiche {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.statistica {
+    text-align: center;
+}
+
+.statistica .valore {
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+.statistica .valore.blu {
+    color: var(--primary);
+}
+
+.statistica .valore.verde {
+    color: var(--secondary);
+}
+
+.statistica .valore.ambra {
+    color: var(--accent);
+}
+
+.statistica .etichetta {
+    font-size: 0.875rem;
+    color: #6B7280;
+    margin-top: 0.25rem;
+}
+
+/* # skills */
+.griglia-skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.card-competenza {
+    background: var(--white);
+    border-radius: var(--radius);
+    padding: 1.5rem;
+    text-align: center;
+    transition: all 0.2s ease;
+    border: 1px solid var(--border);
+}
+
+.card-competenza:hover {
+    transform: scale(1.02);
+    background: var(--muted);
+}
+
+.card-competenza .icona {
+    font-size: 2.5rem;
+    margin-bottom: 0.75rem;
+}
+
+/* colori skills */
+.card-competenza .icona.blu {
+    color: var(--primary);
+}
+
+.card-competenza .icona.rosso {
+    color: var(--red);
+}
+
+.card-competenza .icona.verde {
+    color: var(--secondary);
+}
+
+.card-competenza .icona.ambra {
+    color: var(--accent);
+}
+
+.card-competenza .nome {
+    font-weight: 600;
+    color: var(--foreground);
+}
+
+@media (max-width: 1024px) {
+    .griglia-skills {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .griglia-statistiche {
+        grid-template-columns: 1fr;
+    }
+
+    .griglia-skills {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .griglia-skills {
+        grid-template-columns: 1fr;
+    }
+}

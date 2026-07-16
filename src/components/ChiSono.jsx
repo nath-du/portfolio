@@ -14,19 +14,12 @@ function ChiSono() {
                         </div>
                         <div className="testo">
                             <p>
-                                Sono una persona a cui piace capire come funzionano le cose e non fermarmi alla prima
-                                soluzione. Quando qualcosa non va, mi piace analizzare il problema e trovare un modo per
-                                risolverlo, e ogni volta che lo faccio, imparo sempre qualcosa di nuovo.
+                               Studio Meccatronica all'ENAIP di Padova e programmo per passione da quando avevo 11 anni.
+                            Realizzo siti web moderni e applicazioni, continuando a imparare attraverso ogni nuovo progetto.
                             </p>
                             <p>
-                                Mi piace imparare cose nuove e mettermi alla prova con progetti sempre diversi. Gran parte
-                                di quello che so l'ho imparato sperimentando, seguendo spiegazioni su youtube, leggendo
-                                documentazioni e cercando di creare soluzioni per i problemi che incontravo.
-                            </p>
-                            <p>
-                                Attualmente studio Meccatronica all'istituto professionale ENAIP (Padova) e continuo a
-                                coltivare la mia passione per lo sviluppo software. Oltre alle applicazioni, mi interessano
-                                anche reti, sistemi e cybersecurity, settori in cui vorrei continuare a crescere.
+                                Offro la realizzazione di siti web a poco prezzo, accessibili a tutti, con l'obiettivo di fare esperienza,
+                                ampliare il mio portfolio e aiutare attività e professionisti a costruire una presenza online semplice, funzionale e accessibile.
                             </p>
                         </div>
 

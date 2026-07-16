@@ -51,7 +51,7 @@ function Footer() {
             <div className="footer-bottom">
                 <div className="footer-copy">© 2026 Nath.dev. Tutti i diritti riservati.</div>
                 <div className="footer-release">
-                    BETA-0.1.3<br />Ultimo <br />aggiornamento: <br />12-07-2026
+                    BETA-0.2.1<br />Ultimo <br />aggiornamento: <br />12-07-2026
                 </div>
             </div>
         </footer>

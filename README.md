@@ -1,6 +1,6 @@
 
 ```
-0.1.3-remake-reactjs
+0.2.1-remake-reactjs
 ├─ README.md
 ├─ index.html
 ├─ package-lock.json

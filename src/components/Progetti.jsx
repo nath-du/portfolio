@@ -13,7 +13,7 @@ function Progetti() {
                     <Link to="/projects" className="btn btn-outline">Vedi tutti i Progetti</Link>
                 </div>
 
-                <div className="griglia-progetti">
+                <div id="progetti" className="griglia-progetti">
                     {progetti.map((progetto) => (
                         <div className="card-progetto" key={progetto.id}>
                             <div className={`header-immagine ${progetto.classeHeader}`}>

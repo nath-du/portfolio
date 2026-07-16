@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 
 function Navbar() {
     const [menuAperto, setMenuAperto] = useState(false);
@@ -7,32 +8,42 @@ function Navbar() {
         setMenuAperto(!menuAperto);
     }
 
+    function chiudiMenu() {
+        setMenuAperto(false);
+    }
+
     return (
         <>
             <header className="navbar">
-                <div className="logo">
+                <Link to="/" className="logo">
                     Nath.dev{" "}
-                    <p style={{ fontSize: "13px", fontWeight: 400 }}>BETA-0.1.3</p>
-                </div>
+                    <p style={{ fontSize: "13px", fontWeight: 400 }}>BETA-0.2.1</p>
+                </Link>
 
                 <ul className="nav-links">
                     <li>
-                        <a href="index.html" className="attivo">Home</a>
+                        <NavLink to="/" end className={({ isActive }) => (isActive ? "attivo" : "")}>
+                            Home
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#progetti">Progetti</a>
+                         <NavLink to="/projects" className={({ isActive }) => (isActive ? "attivo" : "")}>
+                            Progetti
+                        </NavLink>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <NavLink to="/about" className={({ isActive }) => (isActive ? "attivo" : "")}>
+                            Chi Sono
+                        </NavLink>
                     </li>
                     <li>
-                        <a
-                            href="contact.html"
+                        <Link
+                            to="/contact"
                             className="btn btn-primary"
                             style={{ height: "44px", padding: "0 1.5rem", fontSize: "0.875rem", color: "white" }}
                         >
                             Contattami
-                        </a>
+                        </Link>
                     </li>
                 </ul>
 
@@ -43,12 +54,17 @@ function Navbar() {
 
             {/* Menu Mobile */}
             <div className={`menu-mobile ${menuAperto ? "aperto" : ""}`} id="menuMobile">
-                <a href="index.html">Home</a>
-                <a href="#progetti">Progetti</a>
-                <a href="about.html">About</a>
-                <a href="contact.html" className="btn btn-primary" style={{ width: "100%", textAlign: "center", marginTop: "0.5rem" }}>
+                <Link to="/" onClick={chiudiMenu}>Home</Link>
+                <Link to="/#progetti" onClick={chiudiMenu}>Progetti</Link>
+                <Link to="/about" onClick={chiudiMenu}>About</Link>
+                <Link
+                    to="/contact"
+                    onClick={chiudiMenu}
+                    className="btn btn-primary"
+                    style={{ width: "100%", textAlign: "center", marginTop: "0.5rem" }}
+                >
                     Contattami
-                </a>
+                </Link>
             </div>
         </>
     );

@@ -1,0 +1,113 @@
+.griglia-contatti {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+/* # Form (coming soon) */
+.card-form {
+    background: var(--muted);
+    border-radius: var(--radius);
+    padding: 2rem;
+    border: 2px solid var(--border);
+}
+
+.card-form h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.card-form .coming-soon {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: var(--accent);
+    margin-top: 0.5rem;
+}
+
+.card-form .form-placeholder {
+    margin-top: 1.5rem;
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.card-form .form-placeholder .campo {
+    height: 48px;
+    background: #E5E7EB;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+.card-form .form-placeholder .campo-grande {
+    height: 128px;
+    background: #E5E7EB;
+    border-radius: var(--radius);
+    margin-bottom: 1rem;
+}
+
+.card-form .form-placeholder .btn-disabled {
+    height: 48px;
+    background: #D1D5DB;
+    border-radius: var(--radius);
+    width: 100%;
+}
+
+.card-form .nota {
+    text-align: center;
+    font-size: 0.875rem;
+    color: #6B7280;
+    margin-top: 1rem;
+}
+
+/* # Social links */
+.card-social h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--foreground);
+}
+
+.lista-social {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.lista-social a {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius);
+    transition: background 0.2s;
+    font-size: 1.125rem;
+    color: var(--foreground);
+}
+
+.lista-social a:hover {
+    background: var(--muted);
+}
+
+.lista-social a .icona {
+    font-size: 1.5rem;
+    width: 2rem;
+    text-align: center;
+}
+
+.lista-social a .icona.blu {
+    color: var(--primary);
+}
+
+.lista-social a .icona.rosa {
+    color: #E1306C;
+}
+
+.lista-social a .icona.nera {
+    color: #111827;
+}
+
+@media (max-width: 768px) {
+    .griglia-contatti {
+        grid-template-columns: 1fr;
+    }
+}
