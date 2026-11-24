@@ -1,0 +1,20 @@
+.page {
+  min-height: 100vh;
+  min-height: 100svh;
+  padding: 28px 32px;
+  background: var(--sand);
+}
+.shell { display: flex; min-height: calc(100vh - 56px); min-height: calc(100svh - 56px); flex-direction: column; }
+.logo { display: inline-flex; width: fit-content; color: var(--navy); text-decoration: none; }
+.message { display: flex; width: min(100%, 660px); flex: 1; flex-direction: column; justify-content: center; align-items: flex-start; margin: 0 auto; padding: 72px 0; }
+.message h1 { max-width: 15ch; margin-bottom: 20px; color: var(--navy); font-size: clamp(2.3rem, 6vw, 4.4rem); font-weight: 600; letter-spacing: -.045em; line-height: 1.04; }
+.message p { max-width: 48ch; margin-bottom: 32px; color: var(--ink-muted); font-size: clamp(1rem, 2vw, 1.15rem); line-height: 1.65; }
+.homeLink { display: inline-flex; min-height: 48px; align-items: center; justify-content: center; padding: 12px 22px; border-radius: 999px; background: var(--orange); color: #fff; font-size: .95rem; font-weight: 500; text-decoration: none; transition: transform .2s ease, background-color .2s ease; }
+.homeLink:hover { transform: translateY(-1px); background: #d63f27; }
+.homeLink:focus-visible { outline: 3px solid var(--navy); outline-offset: 4px; }
+@media (max-width: 600px) {
+  .page { padding: 20px; }
+  .shell { min-height: calc(100vh - 40px); min-height: calc(100svh - 40px); }
+  .message { padding: 56px 0; }
+  .message h1 { font-size: clamp(2.35rem, 11vw, 3.4rem); }
+}

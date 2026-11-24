@@ -1,0 +1,12 @@
+{
+  "routes": [
+    {
+      "path": "/",
+      "title": "NATH.DEV — Sviluppo Web, Automazioni & Servizi IT"
+    },
+    {
+      "path": "/sviluppo-web",
+      "title": "Realizzazione siti web a Padova | NATH.DEV"
+    }
+  ]
+}

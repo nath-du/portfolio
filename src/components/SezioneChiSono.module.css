@@ -1,0 +1,56 @@
+.sezione {
+    padding: 88px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.griglia {
+    display: grid;
+    grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.6fr);
+    gap: 48px;
+    align-items: start;
+}
+
+.titolo {
+    max-width: 18ch;
+    font-size: clamp(1.9rem, 3.6vw, 3rem);
+    font-weight: 600;
+    letter-spacing: -0.035em;
+    line-height: 1.1;
+}
+
+.elenco {
+    padding: 0;
+    border-top: 1px solid var(--line-strong);
+    list-style: none;
+}
+
+.voce {
+    display: grid;
+    grid-template-columns: 56px minmax(0, 1fr);
+    gap: 18px;
+    padding: 22px 0;
+    border-bottom: 1px solid var(--line);
+}
+
+.numero {
+    color: var(--orange);
+    font-variant-numeric: tabular-nums;
+    font-weight: 600;
+}
+
+.testo {
+    color: var(--ink-muted);
+    font-size: 1.02rem;
+    line-height: 1.6;
+}
+
+@media (max-width: 760px) {
+    .sezione {
+        padding: 64px 0;
+    }
+
+    .griglia {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+}

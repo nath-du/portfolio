@@ -1,0 +1,43 @@
+.action {
+  position: relative;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  padding: 0;
+  border: 0;
+  border-radius: 50%;
+  background: var(--orange);
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+.action::before {
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: inherit;
+  background: linear-gradient(145deg, rgba(255,255,255,.95), rgba(255,255,255,.15) 45%, rgba(255,255,255,.85));
+  content: '';
+  pointer-events: none;
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  mask-composite: exclude;
+}
+.glyph {
+  width: 22px;
+  height: 22px;
+  fill: none;
+  stroke: #fff;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.5;
+}
+.action:hover { transform: scale(1.06); }
+.action:active { transform: scale(.94); }
+.action:focus-visible { outline: 3px solid var(--navy); outline-offset: 4px; }
+.small { width: 48px; height: 48px; }
+.small .glyph { width: 18px; height: 18px; }
+.medium { width: 56px; height: 56px; }
+.large { width: 72px; height: 72px; }
+.large .glyph { width: 28px; height: 28px; }
